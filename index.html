@@ -16,10 +16,10 @@
    Quand le champ perd le focus,
   définir la bordure à "1px solid red"*/
 
-$("input").focus(function(){
+$("#nom, #prenom").focus(function(){  // qd le champs a le focus
   $(this).css("border","1px solid green");
 });
-  $("input").focusout(function(){
+  $("#nom, #prenom").focusout(function(){  // qd le champs perd le focus
     $(this).css("border","1px solid red");
   });
   </script>
